@@ -1,0 +1,11 @@
+# Tested direct dependency/tool pins. Not a hash-locked transitive lockfile.
+# Install after creating a fresh virtual environment; see CONTRIBUTING.md.
+PyYAML==6.0.3
+pytest==9.0.2
+mypy==1.20.2
+types-PyYAML==6.0.12.20260906
+numpy==2.2.6; python_version < "3.11"
+numpy==2.4.2; python_version >= "3.11"
+build==1.4.0
+setuptools==80.10.2
+wheel==0.47.0

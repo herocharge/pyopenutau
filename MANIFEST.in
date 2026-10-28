@@ -1,0 +1,14 @@
+include LICENSE NOTICE README.md HEADLESS.md CONTRIBUTING.md CHANGELOG.md
+include AI_DISCLOSURE.md
+include requirements-dev.txt
+include SECURITY.md .gitignore .gitattributes .editorconfig
+recursive-include .github *.yml
+recursive-include docs *.md *.json
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include scripts *.py
+recursive-include src/pyopenutau/bridge *.cs *.csproj NuGet.Config
+global-exclude *.py[cod] .DS_Store
+prune artifacts
+prune build
+prune dist

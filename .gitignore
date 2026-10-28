@@ -1,0 +1,35 @@
+# Python/build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.venv/
+venv/
+
+# Generated demos, recordings, banks and local engine installations
+artifacts/
+output/
+demo.ustx
+*.wav
+*.mp3
+*.flac
+*.ustx
+*.dll
+*.dylib
+*.so
+OpenUtau.app/
+Singers/
+voicebanks/
+
+# Local credentials/editor files
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/

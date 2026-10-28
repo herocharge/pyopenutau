@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyopenutau"
+version = "0.3.0"
+description = "AI-generated experimental Python authoring and headless rendering for OpenUtau"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6"]
+license = "MIT"
+license-files = ["LICENSE", "NOTICE"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Typing :: Typed",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+]
+
+[project.urls]
+Repository = "https://github.com/herocharge/pyopenutau"
+Issues = "https://github.com/herocharge/pyopenutau/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "mypy>=1.10", "types-PyYAML", "numpy>=1.24", "build>=1", "wheel"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pyopenutau = ["py.typed", "bridge/*.cs", "bridge/*.csproj", "bridge/NuGet.Config"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["integration: requires a separately installed OpenUtau and .NET 8 SDK"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["src/pyopenutau", "examples", "scripts"]

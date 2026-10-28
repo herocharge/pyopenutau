@@ -1,0 +1,17 @@
+{
+  "application_version_from_deps": "0.1.565",
+  "core_assembly_version": "1.0.0.0",
+  "supported_ustx_version": "0.7",
+  "platform": "macOS ARM64",
+  "python": "3.11.14",
+  "dotnet_sdk": "8.0.130",
+  "host_runtime": "8.0.30",
+  "application_bundled_runtime": "8.0.19",
+  "sha256": {
+    "OpenUtau.Core.dll": "e6d1f0bc7bdaf8239fa3b4b47541c36c75cce5ada97fc314b6a51fabb0e698b3",
+    "OpenUtau.Plugin.Builtin.dll": "4b4091f6ef0e215a606f07b3f6dcc7e622e50ef73cf08306841b384269152acd",
+    "libworldline.dylib": "0935c74dde9c71bbe71df51e49bf76ad0888202f56c8f06129af0704b5e39466",
+    "OpenUtau.deps.json": "24d77082740be2562029a8fb36d97ddc03633af4d455d76e28a5896a0faa69cd",
+    "OpenUtau.runtimeconfig.json": "f9c52a08875a9e33f529c6b8ec506876cbcd499f3d4b805480256f2a4dc8f5b5"
+  }
+}
